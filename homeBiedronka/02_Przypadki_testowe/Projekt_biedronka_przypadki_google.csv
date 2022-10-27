@@ -1,0 +1,263 @@
+ID,Id wymagania,Tytuł,Warunki wstępne,Opis kroków,Oczekiwany rezultat
+1,R1,Możliwość zamówienia produktu bez konieczności rejestracji,Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku produkt,"1. Kliknij przycisk ""Przejdź do kasy""
+ 2. Wybierz sposób dostawy i kliknij przycisk ""Kontynuuj"" 
+ 3. Wypełnij wszystkie wymagane pola oraz checkbox zaznaczone * i kliknij przycisk ""Kontynuuj""
+ 4. Wybierz sposób płatności i kliknij przycisk ""Zamawiam i płacę""","Wyświetla się komunikat ""Dziękujęmy za zakuy, potwierdzenie zostanie wysłane na maila"""
+2,R2,Rejestracja użytkownika Happy Path,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Najedź kursorem na przynisk ""Logowanie""
+ 2. Z rozwiniętej listy kliknij ""Zaloguj się"" 
+ 3. Kliknij w wytłuszczony napis ""Zarejestruj się""
+ 4. Wypełnij prawidłowo wszystkie pola i zaznacz checkbixy oznaczone gwiazdką
+ 5. Kliknij przycisk ""Zarejestruj się"" 
+ 6. W polu ""Wprowadź kod z SMS"" wpisz otrzymany kod 
+ 7. Kliknij przycisk ""Zatwierdź""","Wyświetli się stronę główna na której będzie widoczny tekst ""Witaj Twoje imię"" w miejscu gdzie wcześniej był przycisk ""Logowanie"" po prawej stronie pola ""szukaj w Biedronce"""
+3,R2,Rejestracja użytkownika - pozostawiając puste pola,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pozostaw wszystkie pola puste
+ 2. Nie zaznaczaj żadnego chceckboxa
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki wszystkich pól zmieniają kolor z szarego na czerwony, pod polami pojawia się tekst na czerwono o obowiązku uzupełnienia pola, przy checkboxach pojawi się komunikat na czerwono ""Wprowadź dane w tym polu."""
+4,R2,Rejestracja użytkownika - bez podawania e-mail,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole e-mail pozostaw puste
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola e-mail zmienia kolor z szarego na czerwony, pod polem e-mail pojawia się tekst na czerwono o obowiązku uzupełnienia pola ""Proszę podać e-mail"""
+5,R2,Rejestracja użytkownika - bez podawania podawania hasła,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole hasło pozostaw puste
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola hasło zmienia kolor z szarego na czerwony, pod polem hasło pojawia się tekst na czerwono o obowiązku uzupełnienia pola ""Proszę podać hasło"""
+6,R2,Rejestracja użytkownika - stosując ciąg pustych znaków w polu Imię,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole Imię uzupełnij dowolną ilością pustych znaków ""spacji""
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola imię zmienia kolor z szarego na czerwony, pod polem imię pojawia się tekst na czerwono o obowiązku uzupełnienia pola ""Wprowadź dane w tym polu."""
+7,R2,Rejestracja użytkownika - stosując ciąg liczb w polu Imię,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole Imię uzupełnij dowolną ilością liczb 
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola imię zmienia kolor z szarego na czerwony, pod polem imię pojawia się tekst na czerwono ""Nieprawidłowa wartość."""
+8,R2,Rejestracja użytkownika - stosując ciąg znaków specjalnych w polu Imię,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole Imię uzupełnij dowolnym ciągiem znaków specjalnych
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola imię zmienia kolor z szarego na czerwony, pod polem imię pojawia się tekst na czerwono ""Wartość zawiera nieprawidłowy znak."""
+9,R2,Rejestracja użytkownika - wpisując ponad 20 liter w polu Imię,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole Imię uzupełnij ponad 20 literami
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola imię zmienia kolor z szarego na czerwony, pod polem imię pojawia się tekst na czerwono ""Maksymalna długość to 20."""
+10,R2,Rejestracja użytkownika - stosując ciąg pustych znaków w polu Nazwisko,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole Nazwisko uzupełnij dowolną ilością pustych znaków ""spacji""
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki nazwisko zmienia kolor z szarego na czerwony, pod polem nazwisko pojawia się tekst na czerwono o obowiązku uzupełnienia pola ""Wprowadź dane w tym polu."""
+11,R2,Rejestracja użytkownika - stosując ciąg liczb w polu Nazwisko,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole Nazwisko uzupełnij dowolną ilością liczb 
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola Nazwisko zmienia kolor z szarego na czerwony, pod polem Nazwisko pojawia się tekst na czerwono ""Nieprawidłowa wartość."""
+12,R2,Rejestracja użytkownika - stosując ciąg znaków specjalnych w polu Nazwisko,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole Nazwisko uzupełnij dowolnym ciągiem znaków specjalnych
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola Nazwisko zmienia kolor z szarego na czerwony, pod polem Nazwisko pojawia się tekst na czerwono ""Wartość zawiera nieprawidłowy znak.."""
+13,R2,Rejestracja użytkownika - stosując ciąg pustych znaków w polu Hasło,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole hasło uzupełnij dowolną ilością pustych znaków ""spacji""
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola hasło zmienia kolor z szarego na czerwony, pod polem hasło pojawia się tekst na czerwono o obowiązku uzupełnienia pola ""Proszę podać hasło"""
+14,R2,Rejestracja użytkownika - stosując ciąg pustych znaków w polu e-mail,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole e-mail uzupełnij dowolną ilością pustych znaków ""spacji""
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola e-mail zmienia kolor z szarego na czerwony, pod polem e-mail pojawia się tekst na czerwono o obowiązku uzupełnienia pola ""Proszę podać e-mail"""
+15,R2,Rejestracja użytkownika - podając numer telefonu składający się z pustych znaków,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole telefon uzupełnij ciągiem pustych znaków
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola telefon zmienia kolor z szarego na czerwony, pod polem telefon pojawia się tekst na czerwono o obowiązku uzupełnienia pola ""Wprowadź dane w tym polu."""
+16,R2,Rejestracja użytkownika - pozostawiając numer telefonu pusty,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole telefon pozostaw puste
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola telefon zmienia kolor z szarego na czerwony, pod polem telefon pojawia się tekst na czerwono o obowiązku uzupełnienia pola ""Wprowadź dane w tym polu."""
+17,R2,Rejestracja użytkownika - podając numer telefonu składający się z ciągu cyfr różnego od 9 znaków,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole telefon uzupełnij ciągiem cyfr różnym od 9 znaków
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola telefon zmienia kolor z szarego na czerwony, pod polem telefon pojawia się tekst na czerwono o obowiązku uzupełnienia pola ""Niepoprawny format numeru telefonu"""
+18,R2,Rejestracja użytkownika - podając numer telefonu wcześniej wykorzystany,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole telefon uzupełnij numerem telefonu wcześniej wykorzystanym
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola telefon zmienia kolor z szarego na czerwony, pod polem telefon pojawia się tekst na czerwono o obowiązku uzupełnienia pola ""Numer telefonu jest już zajęty"""
+19,R2,Rejestracja użytkownika - nie stosując małych liter w polu Hasło,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole hasło uzupełnij uzupełnij ciągiem znaków nie stosując małych liter
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola hasło zmienia kolor z szarego na czerwony, pod polem hasło pojawia się tekst na czerwono ""Nieprawidłowe hasło: musi zawierać co najmniej 1 małych liter."""
+20,R2,Rejestracja użytkownika - nie stosując wielkich liter w polu Hasło,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole hasło uzupełnij uzupełnij ciągiem znaków nie stosując dużych liter
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola hasło zmienia kolor z szarego na czerwony, pod polem hasło pojawia się tekst na czerwono ""Nieprawidłowe hasło: musi zawierać co najmniej 1 wielkich liter.."""
+21,R2,Rejestracja użytkownika - nie stosując cyfr w polu Hasło,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole hasło uzupełnij uzupełnij ciągiem znaków nie stosując cyfr
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola hasło zmienia kolor z szarego na czerwony, pod polem hasło pojawia się tekst na czerwono ""Nieprawidłowe hasło: musi zawierać przynajmniej 1 cyfr..."""
+22,R2,Rejestracja użytkownika - nie stosując znaków specjalnych w polu Hasło,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole hasło uzupełnij uzupełnij ciągiem znaków nie stosując znaków specjalnych
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola hasło zmienia kolor z szarego na czerwony, pod polem hasło pojawia się tekst na czerwono ""Nieprawidłowe hasło: musi zawierać przynajmniej 1 znaków specjalnych.."""
+23,R2,Rejestracja użytkownika - pole powtórz hasło pozostawione puste,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole powtórz hasło pozostaw puste
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola hasło zmienia kolor z szarego na czerwony, pod polem hasło pojawia się tekst na czerwono ""Potwierdzenie hasła nie pasuje..."""
+24,R2,Rejestracja użytkownika - pole powtórz hasło zastosowanie pustych znaków,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole powtórz hasło uzupełnij dowolną ilością pustych znaków 
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola hasło zmienia kolor z szarego na czerwony, pod polem hasło pojawia się tekst na czerwono ""Potwierdzenie hasła nie pasuje..."""
+25,R2,Rejestracja użytkownika - pole powtórz hasło inne niż hasło,Użytkownik znajduję się na stronie https://konto.biedronka.pl/realms/loyalty/login-actions/registration?client_id=sfcc&tab_id=wFThQJGVVqI,"1. Pole powtórz hasło uzupełnij znakami innymi niż w polu hasło
+ 2. Pozostałe pola wypełnij prawidłowymi danymi
+ 3. Kliknij przycisk Zarejestruj się","Brak możliwości możliwośći zarejestrowania. Obwódki pola hasło zmienia kolor z szarego na czerwony, pod polem hasło pojawia się tekst na czerwono ""Potwierdzenie hasła nie pasuje..."""
+26,R4,Sprawdzenie numeru karty lojalnościowej MB,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/ i ma aktywne konto,"1. Najedź kursorem na tekst ""Witaj Twoje imię"" (znajduję się po prawej stronie od pola wyszukaj)
+ 2. Z rozwiniętej listy kliknij w przycisk ""Moje dane""","Wyświetli się strona z danymi, numer karty widoczny w okienku pod napisem: ""Numer karty moja biedronka"""
+27,R7,Zmiana danych przypisanych do konta,"Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/, ma aktywne konto i jest zalogowany","1. Najedź kursorem na tekst ""Witaj Twoje imię"" (znajduję się po prawej stronie od pola wyszukaj)
+ 2. Z rozwiniętej listy kliknij w przycisk ""Moje dane"" 
+ 3. Z lewej strony z menu ""Moje konto"" kliknij przycisk ""Moje dane"" 
+ 4. Kliknij przycisk ""Edytuj dane""","W nowej karcie wyświetli się formularz Edycji konta umożliwiający zmianę danych takich jak: e-mail, imię, naziwsko, nr telefonu,"
+28,R8,Dostępność regulaminu korzystania home.biedronka.pl,"Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/, ma aktywne konto i jest zalogowany","1. Najedź kursorem na tekst ""Witaj Twoje imię"" (znajduję się po prawej stronie od pola wyszukaj)
+ 2. Z rozwiniętej listy kliknij w przycisk ""Moje dane"" 
+ 3. Z lewej strony z menu ""Moje konto"" kliknij przycisk ""Regulaminy""",Wyświetli się Regulamin zakupów internetowych w sklepie internetowym Biedronka Home
+29,R9,Logowanie do sklepu - Happy Path,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/ i ma aktywne konto,"1. Kliknij przycisk ""Logowanie""
+ 2. W okienku które wyskoczy ponownie klikamy w przycisk ""Logowanie""
+ 3. Wypełnij pole E-mail / Nr telefonu / Nr karty lojalnościowej dowolnie prawidłowymi danymi i kliknij przycisk ""Zaloguj się""
+ 4. W polu hasło wpisz prawidłowe hasło i kliknij przycisk ""Zaloguj się""","Poprawne zalogowanie na stronie głównej o czym informuję tekst ""Witaj Twoje imię"" w miejscu gdzie wcześniej był przycisk ""Logowanie"""
+30,R9,Wylogowanie ze sklepu - Happy Path,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/ i jest zalogowany,"1. Najedź kursorem na tekst ""Witaj Twoje imię"" (znajduję się po prawej stronie od pola wyszukaj)
+ 2. Z rowiniętej listy kliknij w przycisk ""Wyloguj się""","Poprawne wylogowanie. Na stronie głównej w miejscu gdzie był tekst ""Witaj Twoje imię"" pojawi się przycisk ""Logowanie"""
+31,R9,Logowanie do sklepu pozostawiając puste pole E-mail / Nr telefonu / Nr karty lojalnościowej,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij przycisk ""Logowanie""
+ 2. W okienku które wyskoczy ponownie klikamy w przycisk ""Logowanie""
+ 3. Pole E-mail / Nr telefonu / Nr karty lojalnościowej pozostaw puste (nic nie wpisuj).
+ 4. Kliknij przycisk ""Zaloguj się""","Brak możliwości zalogowanie. Dodatkowo wyskakuję małę okienko z informacją ""Wypełnij to pole"""
+32,R9,"Logowanie do sklepu z wykorzystaniem pustych znaków (""spacji"")",Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij przycisk ""Logowanie""
+ 2. W okienku które wyskoczy ponownie klikamy w przycisk ""Logowanie""
+ 3. Pole E-mail / Nr telefonu / Nr karty lojalnościowej uzupełnij dowolną ilością pustych znaków (""spacji"")
+ 4. Kliknij przycisk ""Zaloguj się""","Brak możliwości zalogowania. Ramka pola ""E-mail / Nr telefonu / Nr karty lojalnościowej"" zmienia kolor na czerwony oraz pod polem pojawia się tekst na czerwono ""Nieprawidłowa nazwa użytkownika."""
+33,R9,Logowanie do sklepu z wykozystaniem fikcyjnego adresu e-mail,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij przycisk ""Logowanie""
+ 2. W okienku które wyskoczy ponownie klikamy w przycisk ""Logowanie""
+ 3. Pole E-mail / Nr telefonu / Nr karty lojalnościowej uzupełnij fikcyjnym adresem e-mail
+ 4. Kliknij przycisk ""Zaloguj się""","Brak możliwości zalogowania. Ramka pola ""E-mail / Nr telefonu / Nr karty lojalnościowej"" zmienia kolor na czerwony oraz pod polem pojawia się tekst na czerwono ""Nieprawidłowa nazwa użytkownika."""
+34,R9,Logowanie do sklepu wpisując losowy ciąg znaków,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij przycisk ""Logowanie""
+ 2. W okienku które wyskoczy ponownie klikamy w przycisk ""Logowanie""
+ 3. Pole E-mail / Nr telefonu / Nr karty lojalnościowej uzupełnij losowym ciągiem znaków
+ 4. Kliknij przycisk ""Zaloguj się""","Brak możliwości zalogowania. Ramka pola ""E-mail / Nr telefonu / Nr karty lojalnościowej"" zmienia kolor na czerwony oraz pod polem pojawia się tekst na czerwono ""Nieprawidłowa nazwa użytkownika."""
+35,R9,Logowanie do sklepu wpisując w pole Hasło błędne hasło,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/ i ma aktywne konto,"1. Kliknij przycisk ""Logowanie""
+ 2. W okienku które wyskoczy ponownie klikamy w przycisk ""Logowanie""
+ 3. Pole E-mail / Nr telefonu / Nr karty lojalnościowej uzupełnij prawidłowymi danymi
+ 4. Kliknij przycisk ""Zaloguj się""
+ 5. W polu hasło wpisz błędne hasło 
+ 6. Kliknij przycisk ""Zaloguj się""","Brak możliwości zalogowania. Ramka pola ""Hasło"" zmienia kolor na czerwony oraz pod polem pojawia się tekst na czerwono ""Nieprawidłowa hasło."""
+36,R9,Logowanie do sklepu pozostawiając pole Hasło puste,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/ i ma aktywne konto,"1. Kliknij przycisk ""Logowanie""
+ 2. W okienku które wyskoczy ponownie klikamy w przycisk ""Logowanie""
+ 3. Pole E-mail / Nr telefonu / Nr karty lojalnościowej uzupełnij prawidłowymi danymi
+ 4. Kliknij przycisk ""Zaloguj się""
+ 5. Pole hasło pozostaw puste 
+ 6. Kliknij przycisk ""Zaloguj się""","Brak możliwości zalogowania. Ramka pola ""Hasło"" zmienia kolor na czerwony oraz pod polem pojawia się tekst na czerwono ""Nieprawidłowa hasło."""
+37,R9,"Logowanie do sklepu wpisując w pole Hasło dowolny ciąg pustych znaków ""Spacji""",Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/ i ma aktywne konto,"1. Kliknij przycisk ""Logowanie""
+ 2. W okienku które wyskoczy ponownie klikamy w przycisk ""Logowanie""
+ 3. Pole E-mail / Nr telefonu / Nr karty lojalnościowej uzupełnij prawidłowymi danymi
+ 4. Kliknij przycisk ""Zaloguj się""
+ 5. Pole hasło uzupełnij dowolnym ciągiem pustych znaków 
+ 6. Kliknij przycisk ""Zaloguj się""","Brak możliwości zalogowania. Ramka pola ""Hasło"" zmienia kolor na czerwony oraz pod polem pojawia się tekst na czerwono ""Nieprawidłowa hasło."""
+38,R10,Możliwość resetowania hasła,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/ i ma aktywne konto,"1. Kliknij przycisk ""Logowanie""
+ 2. W okienku które wyskoczy ponownie klikamy w przycisk ""Logowanie""
+ 3. Pole E-mail / Nr telefonu / Nr karty lojalnościowej uzupełnij prawidłowymi danymi
+ 4. Kliknij przycisk ""Zaloguj się""
+ 5. Pod polem hasło kliknij przycisk ""Nie pamiętasz hasła?"" 
+ 6. Wpisz numer telefonu do którego planowana jest zmiana hasła
+ 7. Zaloguj się używając hasła wysłanego w wiadomości SMS","Wyświetli się strona z formularzem ""aktualizacja hasła"" Musisz zmienić swoje hasło aby aktywować swoje konto. Z dwoma polami Hasło i Potwierdź hasło"
+39,R11,Katalog produktów umożliwiający maksymalne ułatwienie odnalezienia konkretnego produktu np.. Noże,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Najedź kursorem na jeden z głównych rozdziałów katalogu produktów zaczynający się od ""Kuchnia""
+ 2. Z rozwijanej listy podrozdziałów i kategorii kliknij w przycisk ""Noże""",Wyświetli się lista dostępnych noży
+40,R12,Dodawanie produktów do koszyka bezpośrednio ze strony głównej,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Najedź kursorem myszki na dowolny wybrany produkt
+ 2. Kliknij przycisk ""Dodaj do koszyka""","Wyświeli się okienko pokazujące aktualną zawartość koszyka. Po dodaniu w miejscu gdzie był przycisk ""Dodaj do koszyka"" pojawi się liczba sztuk produktu w koszyku z możliwością dodania więcej lub mniej"
+41,R12,Dodawanie produktów do koszyka po wyszukaniu,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce""
+ 2. Wpisz ""Deska""
+ 3. Kliknij przycisk lupki 
+ 4. Z wyświetlonej listy produktów wybierz dowolny i naciśnij przycisk ""Dodaj do koszyka""","Wyświeli się okienko pokazujące aktualną zawartość koszyka. Po dodaniu w miejscu gdzie był przycisk ""Dodaj do koszyka"" pojawi się liczba sztuk produktu w koszyku z możliwością dodania więcej lub mniej"
+42,R12,Dodawanie produktów do koszyka bezpośrednio z karty szczegółów produktu,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz ""Nóż""
+ 3. Kliknij przycisk lupki 
+ 4. Z wyświetlonej listy kliknij w dowolny produkt
+ 5. Kliknij w przycisk ""Dodaj do koszyka""","Wyświeli się okienko pokazujące aktualną zawartość koszyka. Po dodaniu w miejscu gdzie był przycisk ""Dodaj do koszyka"" pojawi się liczba sztuk produktu w koszyku z możliwością dodania więcej lub mniej"
+43,R12,Usuwanie produktów z koszyka bezpośrednio ze strony głównej,Użytkownik jest na stronie głównej https://home.biedronka.pl/ i ma w koszyku produkt,"1. Najedź kursorem na symbol koszyka w prawym górnym rogu
+ 2. W okienku kliknij przycisk ""Usuń produkt""",Produkt zostanie usunięty z koszyka. Wartość koszyka zostanie pomniejszona o wartość usuniętego produktu.
+44,R12,Usuwanie produktów z koszyka,Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku produkty,"1. Najedź kursorem na przedmiot który chcesz usunąć
+ 2. Kliknij przycisk ""Usuń produkt""",Produkt zostanie usunięty z koszyka. Wartość koszyka zostanie pomniejszona o wartość usuniętego produktu.
+45,R12,Zmiana ilości produktów w koszyku,Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku produkty,"1. Najedź kursorem na ikonę koszyka w prawym górnym rogu 
+ 2. Z rozwiniętej listy kliknij w przycisk białego plusa w kółeczku na niebieskim tle",Liczba (pomiędzy znakiem minus i plus) informująca o ilości danego produktu w koszyku zmieni się. Automatycznie zmienia się również wartość koszyka o wartość zmienianego produktu.
+46,R14,Informacja o minimalnej wartości zamówienia,Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku produkt o wartości poniżej 15 zł,,"W sekcji PODSTUMOWANIE pod Wartością RAZEM (z podatkiem VAT) pojawi się komunikat wyświetlany na czerwono informujący: ""Minimalna kwota zamówienia wynosi 15,00 zł"""
+47,R15,Zapamiętanie zawartości koszyka,"Użytkownik jest na stronie https://home.biedronka.pl, jest zalogowany i ma w koszyku produkty","1. Najedź kursorem na ""Witaj Twoje Imie"" 
+ 2. Z rozwiniętej listy kliknij wyloguj
+ 3. Zaloguj się ponownie",Po zalogowaniu zawartość koszyka pozostaje taka sama jak przed wylogowaniem
+48,R15,Zapamiętanie zawartości koszyka - inna przeglądarka,"Użytkownik posiada aktualne konto w sklepie intenetowym biedronka home, produkty dodawał do koszyka w przeglądarce opera","1. Otwórz przeglądarkę chrome
+ 2. Wejdź na stronę https://home.biedronka.pl/
+ 3. Zaloguj się",Po zalogowaniu zawartość koszyka pozostaje taka jaka były uzupełniona wcześniej na przeglądarce Opera
+49,R16,Dodanie produktu do ulubionych niezarejetrowany użytkownik,Uzytkownik znajduję się na stronie https://home.biedronka.pl/ i nie posiada konta użytkownika,"1. Dodaj produkt do ulubionych klikając w serduszko przy karcie produktu ""Dodaj do listy życzeń""",Brak możliwości dodania produktu do ulubionych. Wyświetli się okienko z Kartą Moja Biedronka z prośbą o zalogowanie się
+50,R16,Dodanie produktu do ulubionych bezpośrednio ze strony głównej,Uzytkownik znajduję się na stronie https://home.biedronka.pl/ i jest zalogowany,"1. Najedź kursorem na dowolny produkt
+ 2. Kliknij przycisk serduszko ""Dodaj do listy życzeń""","Serduszko zmieni kolor z białego na czarny, dodatkowo w prawym górnym rogu przy serduszku ""Lista życzeń"" pojawi się cyfra w kółeczku na niebieskim tle informująca o liczbie produktów dodanych do ulubionych"
+51,R16,Dodawanie produktów do ulubionych po wyszukaniu,Uzytkownik znajduję się na stronie https://home.biedronka.pl/ i jest zalogowany,"1. Kliknij w pole ""Wyszukaj w Biedronce""
+ 2. Wpisz ""Deska""
+ 3. Najedz kursorem na dowolny produkt
+ 4. Kliknij przycisk serduszko ""Dodaj do listy życzeń""","Serduszko zmieni kolor z białego na czarny, dodatkowo w prawym górnym rogu przy serduszku ""Lista życzeń"" pojawi się cyfra w kółeczku na niebieskim tle informująca o liczbie produktów dodanych do ulubionych"
+52,R16,Dodawanie produktów do ulubionych bezpośrednio z karty szczegółów produktu,Uzytkownik znajduję się na stronie https://home.biedronka.pl/ i jest zalogowany,"1. Kliknij w pole ""Wyszukaj w Biedronce""
+ 2. Wpisz ""Deska""
+ 3. Najedz kursorem na dowolny produkt i kliknij w niego
+ 4. Kliknij przycisk serduszko ""Dodaj do listy życzeń""","Serduszko zmieni kolor z białego na czarny, dodatkowo w prawym górnym rogu przy serduszku ""Lista życzeń"" pojawi się cyfra w kółeczku na niebieskim tle informująca o liczbie produktów dodanych do ulubionych"
+53,R16,Usuwanie produktów bezpośrednio z listy życzeń (ulubionych),"Uzytkownik znajduję się na stronie https://home.biedronka.pl/, jest zalogowany i ma produkty w liscie życzeń","1. Kliknij w przycisk ""Lista życzeń"" 
+ 2. Kliknij w ikonę czarnego serduszka ""Usuń z listy życzeń"" dowolnego produktu","Produkt zostanie usunięty z listy życzeń, dodatkowo w prawym górnym rogu przy serduszku ""Lista życzeń"" cyfra w kółeczku na niebieskim tle informująca o liczbie produktów dodanych do ulubionych zostanie pomniejszona o ilość usuniętych produktów"
+54,R17,Informacja o maksymalnej liczbie tego samego produktu możliwej do zamówienia w ciągu doby,Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku żądany produkt,1. Za pomocą okrągłego przycisku biłaego plusika na niebieskim tle dodaj 10 szt.,"Przycisk dodawania produktu zmienia się kolor plusika na szary i tło staje się białe. Wyświetlenie informajca na czerwono, że ""Maksymalnie można zamówić 10 sztuk takiego samego produktu w ciągu doby"""
+55,R18,Dodawanie kodu rabatowego - Happy Path,Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku żądany produkt,"1. Kliknij w pole ""KOD RABATOWY"" pod Podsumowaniem
+ 2. W polu ""Wpisz kod rabatowy"" wprowadź błędny kod 
+ 3. Kliknij w przycisk ""Dodaj kod rabatowy""","Rabat zostanie naliczony, jako potwierdzenie w sekcji PODSUMOWANIE wartość koszyka zostanie pomniejszona o wartość kodu rabatowego"
+56,R18,Dodawanie kodu rabatowego nieaktualnego,Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku żądany produkt,"1. Kliknij w pole ""KOD RABATOWY"" pod Podsumowaniem
+ 2. W polu ""Wpisz kod rabatowy"" wprowadź błędny kod 
+ 3. Kliknij w przycisk ""Dodaj kod rabatowy""","Wyświetli się informacja na czerwono: ""Nie rozpoznano kodu"""
+57,R18,Dodawanie kodu rabatowego zostawiając puste pole,Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku żądany produkt,"1. Kliknij w pole ""KOD RABATOWY"" pod Podsumowaniem
+ 2. W polu ""Wpisz kod rabatowy"" nic nie wpisuj (pozostaw puste pole)
+ 3. Kliknij w przycisk ""Dodaj kod rabatowy""","Wyświetli się informacja na czerwono: ""Nie rozpoznano kodu"""
+58,R19,"Uzyskanie darmowej dostawie przy zakupach za minimum 149,00 zł","Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku produkt o wartości co najmniej 149,00 zł",,"W sekcji PODSTUMOWANIE Dostawa wyświetli wartość od 0,00 zł"
+59,R20,Wybór opcji dostawy,Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku żądany produkt,"1. Kliknij przycisk ""Przejdź do kasy""
+ 2. Wybierz sposób dostawy poprzez kliknięcie w daną opcje dostawy",Obwódka wybranego sposobu dostawy zmieni kolor na niebieski oraz zostanie zaznaczony radio button
+60,R22,Wybór metody płatności on-line,Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku żądany produkt,"1. Kliknij przycisk ""Przejdź do kasy""
+ 2. Wybierz sposób dostawy i kliknij przycisk ""Kontynuuj"" 
+ 3. Wypełnij wszystkie wymagane pola oraz checkbox zaznaczone * i kliknij przycisk ""Kontynuuj""
+ 4. Wybierz sposób płatności poprzez kliknięcie w daną opcje zapłaty","Obwódka wybranego sposobu płatności zmieni kolor na niebieski oraz zostanie zaznaczony radio button a pole ""zamawiam i płacę"" podświetli się na czarno i stanie się aktywnym przyciskiem"
+61,R24,Możliwość zaznaczenia Faktury VAT na firmę podczas składania zamowienia,Użytkownik jest na stronie https://home.biedronka.pl/cart i ma w koszyku żądany produkt,"1. Kliknij przycisk ""Przejdź do kasy""
+ 2. Wybierz sposób dostawy i kliknij przycisk ""Kontynuuj"" 
+ 3. Zaznacz checkbox ""Faktura VAT na firmęj""","Wyświętlą się dodatkowe pola do uzupełnienia dotyczące firmy takie jak: Nazwa firmy, NIP, Kraj, Kod pocztowy, Miejscowość, Ulica, Numer domu, Numer mieszkania"
+62,R27,Wyszukiwarka znajduje się na stronie głównej,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce""","Pole wyszukiwania powiekszy się, pojawi się możliwośc wpisania tekstu oraz rozwinie się lista z popularnymi wyszukiwaniami"
+63,R28,Sprawdzenie wyszukiwania pojedyńczy wynik,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz ""Nóż uniwersalny kuty Borde""
+ 3. Kliknij przycisk lupki",Wyświetli się strona szukanego produktu (zostaniemy przeniesieni na bezpośrednio na strone szukanego noża)
+64,R28,Sprawdzenie wyszukiwania znaków specjalnych,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz jeden dowolny znak specjalny
+ 3. Kliknij przycisk lupki","Wyświetli się strona z informacją ""Nie znaleziono produktu"""
+65,R28,Sprawdzenie wyszukiwania polskich znaków diakrytycznych,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz jeden dowolny polski znak diakrytyczny
+ 3. Kliknij przycisk lupki","Wyświetli się strona z informacją ""Nie znaleziono produktu"""
+66,R28,Sprawdzenie wyszukiwania pojedyńczej cyfry,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz jedeną dowolną cyfrę
+ 3. Kliknij przycisk lupki","Wyświetli się lista produktów, które w nazwie zawierają szukaną cyfrę"
+67,R28,Sprawdzenie wyszukiwania producent,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz nazwę dowolnego producenta
+ 3. Kliknij przycisk lupki",Wyświetli się lista produktów danego producenta
+68,R28,Sprawdzenie wyszukiwania długiego ciągu znaków,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz dowolny długi ciąg znaków
+ 3. Kliknij przycisk lupki","Wyświetli się strona z informacją ""Nie znaleziono produktu"""
+69,R28,"Sprawdzenie wyszukiwania pustych znaków (""Spacji"")",Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz dowolny ciąg pustych znaków
+ 3. Kliknij przycisk lupki","Wyświetli się strona z informacją ""Nie znaleziono produktu"""
+70,R28,Sprawdzenie wyszukiwania opcje zaawansowane i ustawienia,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce""","Powiększy się okienko ""Szukaj w Biedronce"" z możliwością wybrania opcji zaawansowane"
+71,R28,Sprawdzenie wyszukiwania - kolorystyka wyników odwiedzonych i nieodwiedzonych,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz ""Nóż""
+ 3. Kliknij przycisk lupki",Wyświetli się lista 40 produktów spełaniających warunek szukanego słowa oraz nazwy produktów wcześniej odwiedzanych zmienią kolor na niebieski. Nieodwiedzone pozostają standardowo czarne.
+72,R28,Sprawdzenie wyszukiwania - liczba wyników na stronie,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz ""Nóż""
+ 3. Kliknij przycisk lupki",Wyświetli się strona z listą produktów spełniających warunek szukanego słowa - liczba znalezionych produktów znajduje się po lewej stronie pod szukanym słowem.
+73,R28,Sprawdzenie wyszukiwania - powrót do wyszukania,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz ""Nóż""
+ 3. Kliknij przycisk lupki 
+ 4. Z wyświetlonej listy kliknij w dowolny produkt
+ 5. Na karcie przeglądarki kliknij przycisk ""wstecz"" aby wrócić do listy wyszukania",Ponownie wyświetli się strona z listą produktów spełniających warunek szukanego słowa
+74,R28,Sprawdzenie wyszukiwania - otwarcie wyników w tym samym oknie,Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz ""Nóż""
+ 3. Kliknij przycisk lupki 
+ 4. Z wyświetlonej listy kliknij w dowolny produkt",Wybrany wynik wyświetli się w tym samym oknie
+75,R28,"Sprawdzenie wyszukiwania - filtr ""Wybrane""",Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce"" 
+ 2. Wpisz ""Nóż""
+ 3. Kliknij przycisk lupki 
+ 4. Z wyświetlonej listy w sekcji Wybrane po lewej stronie zaznacz checkbox ""promocje""",Wyświetli się lista produktów na które aktualnie obowiązuje promocja
+76,R28,"Sprawdzenie wyszukiwania - filtr ""Marka""",Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce""
+ 2. Wpisz ""Nóż""
+ 3. Kliknij przycisk lupki 
+ 4. Z wyświetlonej listy po lewej stronie kliknij w ""Marka""
+ 5. Z rozwiniętej listy wybierz dowolną Markę",Wyświetli się lista produktów tylko wybranej Marki
+77,R28,"Sprawdzenie wyszukiwania - filtr ""Cena"" - przedział",Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce""
+ 2. Wpisz ""Nóż""
+ 3. Kliknij przycisk lupki 
+ 4. Z wyświetlonej listy po lewej stronie kliknij w ""Cena""
+ 5. Z rozwiniętej listy wybierz dowolny przedział cen zaznaczając radiobutton",Wyświetli się lista produktów tylko wybranego przedziału cen
+78,R28,"Sprawdzenie wyszukiwania - filtr ""Cena"" - wpisany zakres",Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce""
+ 2. Wpisz ""Deska""
+ 3. Kliknij przycisk lupki 
+ 4. Z wyświetlonej listy po lewej stronie kliknij w ""Cena""
+ 5. Z rozwiniętej listy wpisz ręcznie dowolny zakres cen MIN/MAX",Wyświetli się lista produktów spełniających zadany zakres cen MIN/MAX
+79,R28,"Sprawdzenie wyszukiwania - filtr ""Cena"" - produkty o konkretnej cenie",Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce""
+ 2. Wpisz ""Deska""
+ 3. Kliknij przycisk lupki 
+ 4. Z wyświetlonej listy po lewej stronie kliknij w ""Cena""
+ 5. Z rozwiniętej listy wpisz ręcznie cenę MIN/MAX o wartości 99",Wyświetli się lista produktów spełniających żądany poziom ceny
+80,R28,"Sprawdzenie wyszukiwania - filtr ""Cena"" - produkty o konkretnej cenie łącznie z groszami",Użytkownik znajduję się na stronie głównej https://home.biedronka.pl/,"1. Kliknij w pole ""Wyszukaj w Biedronce""
+ 2. Wpisz ""Deska""
+ 3. Kliknij przycisk lupki 
+ 4. Z wyświetlonej listy po lewej stronie kliknij w ""Cena""
+ 5. Z rozwiniętej listy wpisz ręcznie dowolną cenę MIN/MAX o wartości łącznie z groszami",Wyświetli się lista produktów spełniających żądany poziom ceny
